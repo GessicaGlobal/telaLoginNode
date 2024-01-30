@@ -43,10 +43,6 @@ function checkToken(req, res, next) {
         res.status(400).json({ msg: "Token inválido" });
     }
 }
-
-
-
-
 //Register User
 app.post('/auth/register', async (req, res) => {
     const { name, email, password, confirmpassword } = req.body
@@ -124,6 +120,7 @@ app.post("/auth/login", async (req, res) => {
         res.status(500).json({ msg: "Erro interno do servidor ao realizar a autenticação." })
     }
 })
+
 
 // credenciais
 const dbUser = process.env.DB_USER

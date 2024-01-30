@@ -3,14 +3,15 @@ import { Button } from "./styles";
 
 interface LoginButtonProps {
   onClick:any;
+  value:string;
 }
 
-export const LoginButton:React.FC<LoginButtonProps> = ({onClick}) => {
+export const LoginButton:React.FC<LoginButtonProps> = ({onClick, value}) => {
   return (
     <>
       <Button
       onClick={onClick}
-      >Entrar</Button>
+      >{value} </Button>
     </>
   );
 };

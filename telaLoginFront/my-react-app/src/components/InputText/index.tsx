@@ -7,7 +7,7 @@ interface InputTextProps {
   onChange:any;
 }
 
-export const InputText: React.FC<InputTextProps> = ({ placeholder, value, onChange }) => {
+export const InputText: React.FC<InputTextProps> = ({ placeholder,  value, onChange }) => {
   return (
     <LoginContent>
       <Input
